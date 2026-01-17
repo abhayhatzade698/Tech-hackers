@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FarmConnect | Digital Contract Farming</title>
+
+<link rel="stylesheet" href="project.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <div class="nav-container">
+        <div class="logo">
+            <i class="fas fa-leaf"></i> FarmConnect
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1>Connecting Farmers to Guaranteed Markets</h1>
+        <p>Fair prices • Smart contracts • Secure payments</p>
+        <button class="btn btn-primary" onclick="openModal()">Get Started</button>
+        <button class="btn btn-outline">Learn More</button>
+    </div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+    <div class="stat"><h2>50K+</h2><p>Farmers</p></div>
+    <div class="stat"><h2>200+</h2><p>Buyers</p></div>
+    <div class="stat"><h2>₹5Cr+</h2><p>Contracts</p></div>
+    <div class="stat"><h2>98%</h2><p>Satisfaction</p></div>
+</section>
+
+<!-- FEATURES -->
+<section class="features" id="features">
+    <h2>Why Choose FarmConnect?</h2>
+    <div class="feature-grid">
+        <div class="feature">
+            <i class="fas fa-handshake"></i>
+            <h3>Guaranteed Buyers</h3>
+            <p>No middlemen, direct deals</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-chart-line"></i>
+            <h3>Fair Pricing</h3>
+            <p>Market-based transparent prices</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-file-contract"></i>
+            <h3>Smart Contracts</h3>
+            <p>Secure & automated agreements</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-mobile-alt"></i>
+            <h3>Easy Platform</h3>
+            <p>Mobile & desktop friendly</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- UNIQUE FEATURES -->
+<section class="unique-features">
+    <h2>What Makes FarmConnect Different?</h2>
+
+    <div class="unique-grid">
+
+        <div class="unique-card">
+            <i class="fas fa-shield-alt"></i>
+            <h3>Guaranteed Price Protection</h3>
+            <p>Farmers receive a pre-locked price even if market prices fall.</p>
+        </div>
+
+        <div class="unique-card">
+            <i class="fas fa-brain"></i>
+            <h3>AI Crop Planner</h3>
+            <p>Suggests the most profitable crops based on land, weather, and market demand.</p>
+            <button onclick="showCropSuggestion()">Try Demo</button>
+            <p id="cropResult"></p>
+        </div>
+
+        <div class="unique-card">
+            <i class="fas fa-users"></i>
+            <h3>Group Contract Farming</h3>
+            <p>Multiple farmers can collaborate to sign large-scale contracts with buyers.</p>
+        </div>
+
+        <div class="unique-card">
+            <i class="fas fa-wallet"></i>
+            <h3>Instant Advance Payment</h3>
+            <p>Farmers receive up to 30% advance payment immediately after contract approval.</p>
+        </div>
+
+        <div class="unique-card">
+            <i class="fas fa-microphone"></i>
+            <h3>Voice-Based Platform</h3>
+            <p>Voice-assisted contract explanation with local language support.</p>
+            <button onclick="voiceDemo()">Voice Demo</button>
+        </div>
+
+        <div class="unique-card">
+            <i class="fas fa-star"></i>
+            <h3>Farmer Reputation Score</h3>
+            <p>Reliable farmers gain higher visibility, better buyers, and premium pricing.</p>
+        </div>
+
+        <div class="unique-card">
+            <i class="fas fa-cloud-rain"></i>
+            <h3>Climate Risk Alerts</h3>
+            <p>Automatic weather risk detection with instant insurance claim initiation.</p>
+        </div>
+
+        <div class="unique-card">
+            <i class="fas fa-recycle"></i>
+            <h3>Waste-to-Profit Marketplace</h3>
+            <p>Unsold or rejected crops can be sold to processing and recycling units.</p>
+        </div>
+
+        <div class="unique-card">
+            <i class="fas fa-heart"></i>
+            <h3>Farmer Support System</h3>
+            <p>Mental health assistance, helplines, and community support for farmers.</p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- CTA -->
+<section class="cta">
+    <h2>Start Your Journey Today</h2>
+    <button class="btn btn-primary" onclick="openModal()">Join Free</button>
+</section>
+
+<!-- MODAL -->
+<div class="modal" id="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Create Account</h2>
+        <input type="text" placeholder="Full Name">
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <button class="btn btn-primary">Sign Up</button>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer id="contact">
+    <p>© 2026 FarmConnect | All Rights Reserved</p>
+</footer>
+
+<script src="project.js"></script>
+</body>
+</html>
