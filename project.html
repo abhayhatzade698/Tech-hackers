@@ -26,7 +26,20 @@
             <span></span><span></span><span></span>
         </div>
     </div>
+   
+
 </nav>
+
+<!-- INFO PANEL -->
+<div id="infoPanel" class="info-panel">
+    <h3 id="infoTitle">Welcome to FarmConnect</h3>
+    <p id="infoText">
+        Tap on menu items to know more about each section.
+    </p>
+</div>
+
+
+
 
 <!-- HERO -->
 <section class="hero" id="home">
@@ -158,6 +171,17 @@
         <button class="btn btn-primary">Sign Up</button>
     </div>
 </div>
+
+<!-- DETAIL MODAL -->
+<div class="modal" id="detailModal">
+    <div class="modal-content">
+        <span class="close" onclick="closeDetailModal()">&times;</span>
+        <h2 id="detailTitle"></h2>
+        <p id="detailText"></p>
+        <button class="btn btn-primary" onclick="speakDetail()">🔊 Voice Explain</button>
+    </div>
+</div>
+
 
 <!-- FOOTER -->
 <footer id="contact">
